@@ -1,5 +1,5 @@
 package Exo5;
-import Exo5.Article;
+import Article;
 
 public class Main {
 
