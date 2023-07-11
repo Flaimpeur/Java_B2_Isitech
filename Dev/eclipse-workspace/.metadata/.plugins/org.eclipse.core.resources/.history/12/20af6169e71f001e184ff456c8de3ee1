@@ -1,0 +1,47 @@
+package Exo3;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// ******
+		// * Initialisation des différentes variables
+		Random random = new Random(); //Le random récupérer un numéro aléatoire mais il faut l'importer
+		int numberToFind = 0;
+		boolean win = false;
+		int nbOfTry = 0;
+		long duration;
+		Instant start = Instant.now(); // Cette classe est utile pour récupérer l'heure à la quelle on rentre dans le jeux, il faut l'importer et je l'ai récupérer sur la java doc : https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html
+		numberToFind = random.nextInt(10001); // Le numéro à trouver est compris entre 0 et 10000
+		// *
+		// ******
+		
+		System.out.println("Vous devez deviner un nombre entre 0 et 10000 !");
+		do {
+			nbOfTry = nbOfTry + 1;
+			Scanner test = new Scanner(System.in); // le System.in c'est l'input standard qui sert donc à récupérer une entré clavier
+			int yourNumber = test.nextInt();
+			if (yourNumber == numberToFind)
+			{
+				Instant end = Instant.now();
+				System.out.println("Bravo vous avez trouver !!!");
+				duration = Duration.between(start, end).getSeconds(); // Le duration est utilisé pour calculer un temps entre deux temps il faut l'importer et je l'ai trouver grâce à la java doc : https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html
+				System.out.println("Vous avez réussi en " + nbOfTry + " d'essais" + " et en " + duration + " secondes.");
+				win = true;
+				
+			} else if (yourNumber > numberToFind)
+			{
+				System.out.println("C'est moins.");
+			} else if (yourNumber < numberToFind)
+			{
+				System.out.println("C'est plus.");
+			}
+		}
+		while (win == false);
+	}
+
+}

@@ -1,0 +1,38 @@
+package Array;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] mailArray = {"jpp@sfr.fr", "tom@gmail.com", "fred@sfr.fr", "victor@sfr.fr", "chris@sfr.fr", "robber@orange.fr", "paul@sfr.fr", "lise@gmail.com", "thierry@isitech.fr", "marie@isitech.fr"};
+		int gmail = 0;
+		double gmailTT = 0;
+		String[] email = new String[10];
+		String[] mailSplit = new String[1];
+		// Faire sa pour tout les mail maintenant
+//		 for (int x = 0; x < 10 ; x = x+1)
+//		 {
+//			 if (mailArray[x].endsWith("@gmail.com")) {
+//				 gmail = gmail + 1;
+//			 }
+//		 }
+		for (int x = 0; mailArray.length ; x++ )
+		{
+			mailSplit = mailArray[x].split("@");
+			if (email[x] != mailArray[1] )
+			{
+				email[x] = mailSplit[1];
+			}
+			for (int y = 0; email.length ; y++ )
+			{
+				if (mailArray[x].endsWith(email[y])) {
+					
+				}
+			}
+		}
+		
+		 gmailTT = ((double) gmail / 10) * 100;
+		 System.out.println(gmailTT);
+	}
+
+}

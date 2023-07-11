@@ -1,0 +1,24 @@
+package Exo2;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random random = new Random();
+		int[] randomNumber = new int[3];
+		int count = 0;
+			do {
+				
+				for ( int y=0; y<3; y++) 
+				{
+					randomNumber[y] = random.nextInt(1001);
+				}
+				count = count +1;
+			}
+			while ((randomNumber[0] % 2 != 0) || (randomNumber[1] % 2 != 0) || (randomNumber[2] % 2 != 1));
+		
+		System.out.println("Voici la combinaison : " + randomNumber[0] + " " + randomNumber[1] + " " + randomNumber[2]);
+		System.out.println("Cette combinaison à été obtenue en : " + count);
+	}
+}

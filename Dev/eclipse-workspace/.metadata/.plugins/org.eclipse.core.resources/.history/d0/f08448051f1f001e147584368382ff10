@@ -1,0 +1,26 @@
+package test;
+
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello world");
+		int ageDeTom = 20;
+		int ageDeTemel = ageDeTom;
+		ageDeTom = 44;
+		System.out.println(ageDeTom);
+		System.out.println(ageDeTemel);
+		
+		Date naissanceJessim = new Date(98, 9, 3);
+		Date autreDate = naissanceJessim;
+		System.out.println(autreDate);
+		System.out.println(naissanceJessim);
+		naissanceJessim.setTime(4444969999999944);
+		
+		System.out.println(autreDate);
+		System.out.println(naissanceJessim);
+	}
+
+}

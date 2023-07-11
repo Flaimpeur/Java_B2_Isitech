@@ -1,0 +1,65 @@
+package test;
+
+import java.util.Date;
+
+public class Main {
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		System.out.println("Hello world");
+//		int ageDeTom = 20;
+//		int ageDeTemel = ageDeTom;
+//		ageDeTom = 44;
+//		System.out.println(ageDeTom);
+//		System.out.println(ageDeTemel);
+//		
+//		Date naissanceJessim = new Date(98, 9, 3);
+//		Date autreDate = naissanceJessim;
+//		System.out.println(autreDate);
+//		System.out.println(naissanceJessim);
+//		naissanceJessim.setTime(999999999);
+//		
+//		System.out.println(autreDate);
+//		System.out.println(naissanceJessim);
+//		
+//		float f = -120.4f;
+//	}
+	
+	public static void main(String[] args) {
+		Dalton temel = Dalton.JACK;
+		System.out.println(temel.toString());
+		System.out.println(temel);
+//		Dalton data = Dalton.valueOf("Jack");
+//		System.out.println(data.taille());
+		
+		for (Dalton dalton: Dalton.values())
+		{
+			System.out.println(dalton.toString());
+		}
+	}
+
+}
+//Entrainement à l'enum
+enum Dalton
+{
+	JOE (1.40, 52),
+	WILLIAM (1.68,72),
+	JACK (1.93, 83),
+	AVERELL (2.13,89);
+	
+	private final double taille;
+	private final double poids;
+	
+	private Dalton(double taille, double poids)
+	{
+		this.taille = taille;
+		this.poids = poids;
+	}
+	public double taille() {return taille;}
+	public double poids() {return poids;}
+	
+	double imc()
+	{
+		return poids/(taille+taille);
+	}
+}

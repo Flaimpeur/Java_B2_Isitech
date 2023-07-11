@@ -1,0 +1,37 @@
+package Exo2;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random random = new Random();
+		int[] randomNumber = new int[3];
+		int count = 0;
+		retry:
+		for ( int x=0; x<3; x++) 
+		{
+			randomNumber[x] = random.nextInt(1001);
+			if (x==2)
+				count = count +1;
+			{
+				if (randomNumber[0] % 2 == 0) {
+					System.out.println("PAIRS " );
+//					if (randomNumber[1] % 2 == 0) {
+//						if (randomNumber[2] % 2 != 0) {
+//							
+//						}else {
+//							continue retry;
+//						}
+//					}else {
+//						continue retry;
+//					}
+				} else {
+					break;
+				}
+			}
+		}
+		System.out.println("Voici la combinaison : " + randomNumber[0] + " " + randomNumber[1] + " " + randomNumber[2]);
+		System.out.println("Cette combinaison à été obtenue en : " + count);
+	}
+}

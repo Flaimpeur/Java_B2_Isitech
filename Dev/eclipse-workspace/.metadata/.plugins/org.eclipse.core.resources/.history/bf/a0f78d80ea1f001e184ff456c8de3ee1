@@ -1,0 +1,13 @@
+package Exo4;
+
+import java.util.Scanner;
+
+public class Exercice_4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner numberEnter = new Scanner(System.in); // le System.in c'est l'input standard qui sert donc à récupérer une entré clavier
+		int yourNumber = numberEnter.nextInt();
+	}
+
+}

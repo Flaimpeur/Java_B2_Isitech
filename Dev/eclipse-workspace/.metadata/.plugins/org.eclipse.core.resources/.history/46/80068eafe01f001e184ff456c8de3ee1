@@ -1,0 +1,17 @@
+package Exo3;
+
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random random = new Random();
+		int numberToFind = 0;
+		numberToFind = random.nextInt(10001); // Le numéro à trouver est compris entre 0 et 10000
+		
+		System.out.println("Cette combinaison à été obtenue en : ");
+		
+	}
+
+}

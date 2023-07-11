@@ -1,0 +1,21 @@
+package test;
+
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello world");
+		int ageDeTom = 20;
+		int ageDeTemel = ageDeTom;
+		ageDeTom = 44;
+		System.out.println(ageDeTom);
+		System.out.println(ageDeTemel);
+		
+		Date naissanceJessim = new Date(year:1998, month:10, date:3);
+		
+		System.out.println(naissanceJessim);
+	}
+
+}
