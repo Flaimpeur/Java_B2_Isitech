@@ -1,0 +1,11 @@
+package Exo5;
+
+public class Client {
+	private String nom;
+	private String prenom;
+	private String adresse;
+	private int codePostal;
+	private String ville;
+	
+	
+}

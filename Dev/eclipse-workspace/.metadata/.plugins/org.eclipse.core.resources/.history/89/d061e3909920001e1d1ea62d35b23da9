@@ -24,11 +24,7 @@ public class Main {
 		client1.setAdresse("23 avenue Louis XVI");
 		client1.setVille("Lyon 2eme");
 		client1.setCode(69002);
-		System.out.println(client1.getNom());
-		System.out.println(client1.getPrenom());
-		System.out.println(client1.getAdresse());
-		System.out.println(client1.getCode());
-		System.out.println(client1.getVille());
+		
 	}
 
 }
