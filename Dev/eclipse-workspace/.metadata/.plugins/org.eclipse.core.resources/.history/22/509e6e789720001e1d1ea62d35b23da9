@@ -8,12 +8,7 @@ public class Main {
 		System.out.println(vetement1.getDes());
 		System.out.println(vetement1.getPrix());
 		System.out.println(vetement1.getRef());
-		vetement1.setPrix(55);
-		vetement1.setRef("XP21556FL");
-		vetement1.setDes("Short bleu roi");
-		System.out.println(vetement1.getDes());
-		System.out.println(vetement1.getPrix());
-		System.out.println(vetement1.getRef());
+		
 	}
 
 }

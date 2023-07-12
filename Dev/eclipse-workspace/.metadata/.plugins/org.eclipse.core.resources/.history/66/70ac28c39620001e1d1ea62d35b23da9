@@ -24,15 +24,7 @@ public class Article {
 		return designation;
 	}
 	
-	public void setPrix(int prix) {
-		this.prix = prix;
-	}
-	
-	public void setRef(String ref) {
-		this.reference = ref;
-	}
-	
-	public void setDes(String des) {
-		this.designation = des;
+	public void setPrix() {
+		
 	}
 }

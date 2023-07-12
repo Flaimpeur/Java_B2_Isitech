@@ -1,0 +1,13 @@
+package Exo5;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Article test1 = new Article("XP2048B", "Short blanc", 30);
+		System.out.println(test1.getDes());
+		System.out.println(test1.getPrix());
+		System.out.println(test1.getRef());
+	}
+
+}

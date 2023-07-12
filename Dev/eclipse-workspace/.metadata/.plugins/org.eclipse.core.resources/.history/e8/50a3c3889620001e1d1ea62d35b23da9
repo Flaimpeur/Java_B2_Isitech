@@ -1,0 +1,12 @@
+package Exo5;
+
+public class Article {
+
+	private String reference;
+	private String designation;
+	private int prix;
+	
+	public Article(String reference, String designation, int prix) {
+		
+	}
+}
