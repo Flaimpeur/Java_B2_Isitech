@@ -6,5 +6,4 @@ public class Main {
 		EntreATM entre = new EntreATM();
 		entre.ATM();
 	}
-
 }

@@ -20,6 +20,7 @@ public class EntreATM {
 		System.out.println("Oui : entre 1");
 		System.out.println("Non : entre 2");
 		Choix choix = new Choix(entrerDansLeCompte.nextInt());
+		ActionCompte action = new ActionCompte();
 		do
 		{
 			if ((choix.getChoix() !=1) && (choix.getChoix() !=2)) {
@@ -35,7 +36,7 @@ public class EntreATM {
 				CompteBancaire votreCompte1 = new CompteBancaire(client1, 1350.12);
 				System.out.println("Bienvenue " + client1.getPrenom() + " " + client1.getNom());
 				enter = true;
-				votreCompte1.action(client1, choix, changerInfoClient, entrerDansLeCompte, sommeMise);
+				action.action(client1, choix, entrerDansLeCompte, changerInfoClient, sommeMise, votreCompte1);
 			}else if (choix.getChoix() == 2){
 				break;
 			}
