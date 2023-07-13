@@ -685,7 +685,35 @@ public class Personne {
     }
 }
 ```
-
 ``` java
 
 ```
+
+### Les packages
+
+Un package est un ensemble de classes regroupees dans un meme repertoire.
+
+Les packages permettent d'organiser les classes en categories.
+
+Les packages permettent de proteger les classes en les rendant privees.
+
+Les packages permettent de gerer les conflits de noms de classes.
+
+Les packages permettent de controler l'acces aux classes.
+
+Les packages permettent de creer des bibliotheques de classes.
+
+Les packages permettent de creer des classes qui ne sont pas visibles depuis l'exterieur.
+
+Les packages permettent de creer des classes qui ne sont visibles que depuis le package.
+
+## Sujet examen pratique
+
+Creez un programmae console java qui permet de simuler l'interaction avec un ATM (Distributeur Automatique de Billets). 
+Pour cela, il est conseille de creer un diagramme de classe UML avant de commencer a coder. Il devra figurer dans le depot git. Il devra presenter le nom des classes, les attributs et les methodes. Ainsi que les eventuels liens entre les classes.
+
+L'ATM devra permettre de gerer les comptes bancaires des clients. Il devra permettre de creer un compte bancaire, de consulter le solde, de deposer de l'argent, de retirer de l'argent, de consulter l'historique des operations.
+
+L'ATM devra permettre de gerer son compte client. Il devra permettre de modifier les infos du client (nom, prenom, adresse, code postal, ville).
+
+Afin d'eviter que votre programme ne s'arrete pensez a configurer un menu qui permettra de choisir les actions a effectuer. On maintient ainsi le programme en vie tant que l'utilisateur ne decide pas de le quitter. Utilisez une boucle while pour cela.
