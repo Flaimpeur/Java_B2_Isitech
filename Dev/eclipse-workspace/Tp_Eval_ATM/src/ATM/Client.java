@@ -1,13 +1,18 @@
 package ATM;
 
 public class Client {
+	// ****
+	// * Déclaration des variables
 	private String nom;
 	private String prenom;
 	private String adresse;
 	private int codePostal;
 	private String numero;
 	private String ville;
+	// *
+	// ****
 	
+	// Constructeur
 	public Client(String nom, String prenom, String adresse, int codePostal, String ville, String numero) {
 		this.adresse = adresse;
 		this.codePostal = codePostal;
@@ -17,6 +22,8 @@ public class Client {
 		this.numero = numero;
 	}
 	
+	// ******
+	// * Différente fonction pour obtenir les informations du client et les modifier
 	public String getNom() {
 		return nom;
 	}
@@ -65,7 +72,10 @@ public class Client {
 		this.numero = num;
 	}
 	
+	// Fonction pour afficher toute les informations du client
 	public void affichageInfo() {
-		System.out.println("Nom : " + nom + ','  + " Prenom : " + prenom + ',' + " Adresse : " + adresse + ',' + " Code postal : " + codePostal + ',' + " Ville : " + ville + ',' + " Numéro de téléphone : " + numero);
+		System.out.println("Prenom : " + prenom + ',' + " Nom : " + nom + ',' + " Adresse : " + adresse + ',' + " Code postal : " + codePostal + ',' + " Ville : " + ville + ',' + " Numéro de téléphone : " + numero);
 	}
+	// *
+	// ******
 }

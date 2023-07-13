@@ -3,13 +3,17 @@ package ATM;
 import java.util.Scanner;
 
 public class ActionClient {
-
+	
+	// Constructeur
 	public ActionClient() {
-		
 	}
 	
+	// ******
+	// * Début fonction pour savoir se que le client veux changer dans son compte client
 	public void modifClient(Choix choix, Scanner entrerDansLeCompte, Scanner changerInfoClient, Client client1) {
 		do {
+			// ****
+			// * Affichage texte pour guider le client
 			System.out.println("");
 			System.out.println("Souhaitez vous :");
 			System.out.println("1 : Voir vos information");
@@ -20,13 +24,17 @@ public class ActionClient {
 			System.out.println("6 : Changer votre ville");
 			System.out.println("7 : Changer votre numéro de téléphone");
 			System.out.println("8 : Ou vous avez fini et souhaitez sortir");
-			choix.setChoix(entrerDansLeCompte.nextInt());
+			// *
+			// ****
+			choix.setChoix(entrerDansLeCompte.nextInt()); // On fait une entrer clavier pour savoir se que le client fait
+			// ****
+			// * Condition pour savoir se que le client choisi
 			if (choix.getChoix() == 1) {
 				client1.affichageInfo();
 			}else if (choix.getChoix() == 2) {
 				System.out.println("");
 				System.out.print("Entrez votre prenom :");
-				client1.setPrenom(changerInfoClient.nextLine());
+				client1.setPrenom(changerInfoClient.nextLine()); // Le nextLine sert à récupérer une entrer clavier sous forme de String donc chaine de caractére et permet de récupérer une phrase entière
 			}else if (choix.getChoix() == 3) {
 				System.out.println("");
 				System.out.print("Entrez votre nom :");
@@ -38,7 +46,7 @@ public class ActionClient {
 			}else if (choix.getChoix() == 5) {
 				System.out.println("");
 				System.out.print("Entrez votre code postal :");
-				client1.setCode(changerInfoClient.nextInt());
+				client1.setCode(changerInfoClient.nextInt()); // Le nextInt sert à récupérer une entrer clavier sous forme de int donc nombre entier
 			}else if (choix.getChoix() == 6) {
 				System.out.println("");
 				System.out.print("Entrez votre ville :");
@@ -48,7 +56,17 @@ public class ActionClient {
 				System.out.print("Entrez votre numéro de téléphone :");
 				client1.setNum(changerInfoClient.nextLine());
 			}
-		}while(choix.getChoix() != 8);
+			// *
+			// ****
+			
+			//Condition pour être sur que le client à écrit un nombre entre 1 et 8 sinon lui indiquer de choisir entre 1 et 8
+			if (choix.getChoix()<1 || choix.getChoix()>8) {
+				System.out.println("");
+				System.out.println("Veuillez choisir entre 1 et 8.");
+			}
+		}while(choix.getChoix() != 8); // On reste dans la boucle dans que le client ne la pas choisi
+		// *
+		// ******
 	}
 
 }

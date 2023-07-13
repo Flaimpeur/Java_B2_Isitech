@@ -1,8 +1,13 @@
 package ATM;
 
 public class Choix {
+	// ****
+	// * Déclaration variable
 	private int choix;
+	// *
+	// ****
 	
+	// Constructeur
 	public Choix(int choix) {
 		this.choix = choix;
 	}
