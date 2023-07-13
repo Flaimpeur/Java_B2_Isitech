@@ -9,9 +9,6 @@ public class CompteBancaire {
 	private int ajouter;
 	private int x = 0;
 	private String[] tab = new String[100];
-//	private Scanner entrerDansLeCompte = new Scanner(System.in);
-//	private Choix choix = new Choix(entrerDansLeCompte.nextInt());
-//	private Scanner sommeMise = new Scanner(System.in);
 	
 	public CompteBancaire(Client client, double solde) {
 		this.solde = solde;

@@ -9,9 +9,6 @@ public class Client {
 	private int codePostal;
 	private String numero;
 	private String ville;
-//	private Scanner entrerDansLeCompte = new Scanner(System.in);
-//	private Scanner changerInfoClient = new Scanner(System.in);
-//	private Choix choix = new Choix(entrerDansLeCompte.nextInt());
 	
 	public Client(String nom, String prenom, String adresse, int codePostal, String ville, String numero) {
 		this.adresse = adresse;
@@ -92,15 +89,15 @@ public class Client {
 			}else if (choix.getChoix() == 2) {
 				System.out.println("");
 				System.out.print("Entrez votre prenom :");
-				setPrenom(changerInfoClient.next());
+				setPrenom(changerInfoClient.nextLine());
 			}else if (choix.getChoix() == 3) {
 				System.out.println("");
 				System.out.print("Entrez votre nom :");
-				setNom(changerInfoClient.next());
+				setNom(changerInfoClient.nextLine());
 			}else if (choix.getChoix() == 4) {
 				System.out.println("");
 				System.out.print("Entrez votre adresse :");
-				setAdresse(changerInfoClient.next());
+				setAdresse(changerInfoClient.nextLine());
 			}else if (choix.getChoix() == 5) {
 				System.out.println("");
 				System.out.print("Entrez votre code postal :");
@@ -108,11 +105,11 @@ public class Client {
 			}else if (choix.getChoix() == 6) {
 				System.out.println("");
 				System.out.print("Entrez votre ville :");
-				setVille(changerInfoClient.next());
+				setVille(changerInfoClient.nextLine());
 			}else if (choix.getChoix() == 7) {
 				System.out.println("");
 				System.out.print("Entrez votre numéro de téléphone :");
-				setNum(changerInfoClient.next());
+				setNum(changerInfoClient.nextLine());
 			}
 		}while(choix.getChoix() != 8);
 	}
